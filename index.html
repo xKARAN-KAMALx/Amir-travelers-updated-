@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1930">
+  <meta name="description" content="Amir Travelers - आपका सफर, हमारी ज़िम्मेदारी. Comfortable vehicle bookings and pilgrimage trips.">
+  <title>Amir Travelers | आपका सफर, हमारी ज़िम्मेदारी</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Amir Travelers home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 5 54 17v20L32 59 10 37V17Z"/><path d="M17 38h30l-4-12a4 4 0 0 0-4-3H25a4 4 0 0 0-4 3Z"/><path d="M21 38v6m22-6v6M25 31h14M26 48h12"/></svg></span>
+        <span class="brand-copy"><strong class="brand-title">AMIR <em>TRAVELERS</em></strong><small data-i18n="tagline">आपका सफर, हमारी ज़िम्मेदारी</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#vehicles" data-i18n="navVehicles">Vehicles</a>
+        <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Choose language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="hi" type="button">हिंदी</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open settings menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="settings-panel" id="settingsPanel" hidden>
+      <div class="container settings-inner">
+        <strong data-i18n="quickSettings">Quick settings</strong>
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#booking" data-i18n="bookTrip">Plan your trip</a>
+        <a href="#vehicles" data-i18n="navVehicles">Vehicles</a>
+        <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+        <a href="#contact" data-i18n="navContact">Contact & social</a>
+        <div class="settings-languages"><span data-i18n="language">Language</span><button class="lang-btn" data-lang="en" type="button">English</button><button class="lang-btn" data-lang="hi" type="button">हिन्दी</button></div><div class="theme-control"><span data-i18n="theme">Theme</span><button id="themeToggle" type="button">☾ <span data-i18n="toggleTheme">Toggle light/dark</span></button></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="A lineup of family travel cars parked together"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span><span data-i18n="heroEyebrow">WELCOME TO AMIR TRAVELERS</span></p>
+        <div class="visitor-pill"><span class="visitor-dot"></span><span data-i18n="visitorLabel">Visitors online (demo)</span> <strong id="visitorCount">128</strong></div>
+        <h1 data-i18n="heroTitle">WELCOME TO<br><em>AMIR TRAVELERS</em></h1>
+        <p class="hero-description" data-i18n="heroDesc">Reliable rides for family trips, city travel and spiritual journeys across India.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#booking" data-i18n="bookTrip">Plan Your Trip <span>↗</span></a>
+          <a class="btn btn-glass" href="tel:7451952707"><span class="phone-icon">☎</span> 7451952707</a>
+        </div>
+        <div class="hero-points">
+          <span>✦ <span data-i18n="tag24">24×7 Availability</span></span>
+          <span>✦ <span data-i18n="tagComfort">Comfortable travel</span></span>
+          <span>✦ <span data-i18n="tagTrust">Trusted service</span></span>
+        </div>
+      </div>
+      <div class="hero-caption"><span data-i18n="heroCaption">MADE FOR THE MILES THAT MATTER</span><span>01 / 03</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span class="trust-icon">◷</span><p><strong data-i18n="trust1Title">Available 24×7</strong><small data-i18n="trust1Desc">Plan your trip any time</small></p></div>
+        <div><span class="trust-icon">✧</span><p><strong data-i18n="trust2Title">Comfort first</strong><small data-i18n="trust2Desc">Travel with ease</small></p></div>
+        <div><span class="trust-icon">⌖</span><p><strong data-i18n="trust3Title">Pilgrimage trips</strong><small data-i18n="trust3Desc">Popular destinations</small></p></div>
+        <div><span class="trust-icon">♡</span><p><strong data-i18n="trust4Title">Personal service</strong><small data-i18n="trust4Desc">Your journey matters</small></p></div>
+      </div>
+    </section>
+
+    <section class="section booking-section booking-modal" id="booking" aria-hidden="true">
+      <div class="container booking-layout">
+        <div class="section-intro">
+          <p class="eyebrow dark"><span></span><span data-i18n="bookingEyebrow">LET'S GET YOU MOVING</span></p>
+          <h2 data-i18n="bookingTitle">Plan your <em>next journey.</em></h2>
+          <p data-i18n="bookingDesc">Share a few details. We'll prepare your booking message in WhatsApp so you can send it directly to Amir Travelers.</p>
+          <div class="notice-card">
+            <span class="notice-symbol">!</span>
+            <div><strong data-i18n="important">Important information</strong><p data-i18n="minimumRule"><strong>Driver charge: Eeco ₹800 per car; all other listed cars ₹1,000 per car.</strong></p><p data-i18n="tollRule">Toll and parking charges are payable separately.</p><p data-i18n="rateRule">Rates may change.</p></div>
+          </div>
+          <div class="contact-mini">
+            <span class="mini-icon">☎</span><div><small data-i18n="needHelp">Need help planning?</small><a href="tel:7451952707">7451952707</a><small data-i18n="secondaryContact">Secondary: 8007985771</small></div>
+          </div>
+        </div>
+
+        <form class="booking-card" id="bookingForm">
+          <button type="button" class="modal-close" id="closeBooking" aria-label="Close booking form">×</button>
+          <div class="form-heading"><span class="step-number">01</span><div><h3 data-i18n="formTitle">Trip details</h3><p data-i18n="formSubtitle">Fill in the details below</p></div></div>
+          <div class="form-grid">
+            <label><span data-i18n="nameLabel">Full name *</span><input name="name" id="customerName" autocomplete="name" required placeholder="Your name" data-i18n-placeholder="namePlaceholder"></label>
+            <label><span data-i18n="mobileLabel">Mobile number *</span><input name="mobile" id="customerMobile" type="tel" inputmode="numeric" pattern="[0-9+\\-\\s]{10,15}" autocomplete="tel" required placeholder="10-digit number" data-i18n-placeholder="mobilePlaceholder"></label>
+            <label><span data-i18n="pickupLabel">Pickup location *</span><input name="pickup" id="pickup" required placeholder="City / address" data-i18n-placeholder="pickupPlaceholder"></label>
+            <label><span data-i18n="destinationLabel">Destination *</span><input name="destination" id="destination" required placeholder="Where to?" data-i18n-placeholder="destinationPlaceholder"></label>
+            <label><span data-i18n="tripTypeLabel">Trip type *</span><select name="tripType" id="tripType" required><option value="oneway" data-i18n="oneway">One-way</option><option value="full" data-i18n="fullRoute">Full route / round trip</option></select></label>
+            <label><span data-i18n="distanceLabel">Total distance per car (km) *</span><input name="distance" id="distance" type="number" min="1" step="1" required placeholder="Enter total km" data-i18n-placeholder="distancePlaceholder"></label>
+            <label><span data-i18n="carCountLabel">How many cars do you need? *</span><select id="carCount" name="carCount" required><option value="1">1 car</option><option value="2">2 cars</option><option value="3">3 cars</option><option value="4">4 cars</option><option value="5">5 cars</option><option value="6">6 cars</option><option value="7">7 cars</option><option value="8">8 cars</option></select></label>
+            <label><span data-i18n="passengerLabel">Number of passengers (optional)</span><input name="passengers" id="passengers" type="number" min="1" max="200" placeholder="e.g. 12" data-i18n-placeholder="passengerPlaceholder"></label>
+            <label><span data-i18n="dateLabel">Travel date (optional)</span><input name="date" id="travelDate" type="date"></label>
+            <label class="full-width"><span data-i18n="extraLabel">Additional information (optional)</span><textarea name="extra" id="extraInfo" rows="2" placeholder="Stops, luggage, timing..." data-i18n-placeholder="extraPlaceholder"></textarea></label>
+          </div>
+          <div class="car-options-wrap"><div class="car-options-heading"><strong data-i18n="selectEachCar">Select each car individually</strong><small data-i18n="carOptionsNote">Each car can be a different model.</small></div><div id="carOptions" class="car-options"></div></div>
+          <div class="driver-charge-note"><strong data-i18n="driverChargeHeading">Driver charge per car</strong><span><b>Eeco: ₹800</b> · <b>All other cars: ₹1,000</b></span></div>
+          <div class="fare-summary">
+            <div><small data-i18n="estimatedFare">Estimated total fare</small><p><strong id="fareAmount">₹0</strong><span id="fareBreakdown">Enter distance and select cars</span></p></div>
+            <span class="fare-note" data-i18n="estimateNote">Estimate only</span>
+          </div>
+          <p class="fare-disclaimer" data-i18n="fareDisclaimer">Per car: distance × rate + driver charge. Toll and parking are extra. Final fare is confirmed directly.</p>
+          <button class="btn btn-gold submit-btn" type="submit"><span data-i18n="whatsappSubmit">Continue on WhatsApp</span><span class="wa-mark">↗</span></button>
+          <p class="privacy-note" data-i18n="whatsappNote">WhatsApp will open with your details filled in. Review and press Send to submit your booking request.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section vehicles-section" id="vehicles">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow dark"><span></span><span data-i18n="fleetEyebrow">OUR FLEET</span></p><h2 data-i18n="fleetTitle">The right ride for <em>your route.</em></h2></div>
+          <p data-i18n="fleetDesc">Choose a vehicle that suits your journey and budget.</p>
+        </div>
+        <div class="vehicle-grid">
+          <article class="vehicle-card"><a class="vehicle-image eeco-image" href="https://www.marutisuzuki.com/eeco" target="_blank" rel="noopener" aria-label="Official Eeco details"><span class="vehicle-badge">7-seater variant: confirm</span></a><div class="vehicle-info"><div><p class="vehicle-type">ECONOMY · NON-AC</p><h3>Maruti Suzuki Eeco</h3></div><div class="vehicle-rate"><strong>₹8</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="eecoDesc">Practical travel option. ₹8/km + ₹800 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="eeco" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+          <article class="vehicle-card"><a class="vehicle-image xl6-image" href="https://www.nexaexperience.com/xl6" target="_blank" rel="noopener" aria-label="Official XL6 details"><span class="vehicle-badge">AC · 6/7-seat variant</span></a><div class="vehicle-info"><div><p class="vehicle-type">AC · FAMILY MPV</p><h3>Maruti Suzuki XL6</h3></div><div class="vehicle-rate"><strong>₹10</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="xl6Desc">Premium family MPV. ₹10/km + ₹1,000 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="xl6" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+          <article class="vehicle-card"><a class="vehicle-image brezza-image" href="https://www.marutisuzuki.com/arena/brezza" target="_blank" rel="noopener" aria-label="Official Brezza details"><span class="vehicle-badge">AC · seating varies</span></a><div class="vehicle-info"><div><p class="vehicle-type">AC · COMPACT SUV</p><h3>Vitara Brezza</h3></div><div class="vehicle-rate"><strong>₹10</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="brezzaDesc">Comfortable compact SUV. ₹10/km + ₹1,000 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="vitara" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+          <article class="vehicle-card"><a class="vehicle-image brezza-image" href="https://www.marutisuzuki.com/arena/brezza" target="_blank" rel="noopener" aria-label="Official Brezza details"><span class="vehicle-badge">AC · seating varies</span></a><div class="vehicle-info"><div><p class="vehicle-type">AC · SUV</p><h3>Maruti Suzuki Brezza</h3></div><div class="vehicle-rate"><strong>₹10</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="brezzaDesc">Comfortable compact SUV. ₹10/km + ₹1,000 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="brezza" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+          <article class="vehicle-card"><a class="vehicle-image ertiga-image" href="https://www.marutisuzuki.com/arena/ertiga" target="_blank" rel="noopener" aria-label="Official Ertiga details"><span class="vehicle-badge">AC · 7-seater</span></a><div class="vehicle-info"><div><p class="vehicle-type">AC · FAMILY MPV</p><h3>Maruti Suzuki Ertiga</h3></div><div class="vehicle-rate"><strong>₹10</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="ertigaDesc">Family MPV for city and long trips. ₹10/km + ₹1,000 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="ertiga" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+          <article class="vehicle-card"><a class="vehicle-image rumion-image" href="https://www.toyotabharat.com/showroom/rumion/" target="_blank" rel="noopener" aria-label="Official Toyota Rumion details"><span class="vehicle-badge">AC · 7-seater</span></a><div class="vehicle-info"><div><p class="vehicle-type">AC · FAMILY MPV</p><h3>Toyota Rumion</h3></div><div class="vehicle-rate"><strong>₹10</strong><small>/ km</small></div></div><p class="vehicle-desc" data-i18n="rumionDesc">Spacious family MPV. ₹10/km + ₹1,000 driver charge.</p><button class="text-button choose-vehicle" data-vehicle="rumion" type="button"><span data-i18n="chooseVehicle">Choose this vehicle</span> ↗</button></article>
+        </div>
+        <p class="image-credit" data-i18n="vehicleImageNote">Vehicle photos are linked from manufacturer image sources where available. Tap a vehicle image to visit its official page.</p>
+      </div>
+    </section>
+
+    <section class="destinations-section section" id="destinations">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><p class="eyebrow"><span></span><span data-i18n="destinationEyebrow">PLACES WORTH THE JOURNEY</span></p><h2 data-i18n="destinationTitle">Go where your <em>heart leads.</em></h2></div>
+          <p data-i18n="destinationDesc">From nearby city rides to memorable spiritual journeys.</p>
+        </div>
+        <div class="destination-grid">
+          <a class="destination-card dest-agra" href="https://www.google.com/maps/search/?api=1&query=Taj+Mahal+Agra" target="_blank" rel="noopener"><span class="dest-number">01</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="agra">Agra</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-mathura" href="https://www.google.com/maps/search/?api=1&query=Mathura+Vrindavan" target="_blank" rel="noopener"><span class="dest-number">02</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="mathura">Mathura & Vrindavan</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-varanasi" href="https://www.google.com/maps/search/?api=1&query=Varanasi+Ghats" target="_blank" rel="noopener"><span class="dest-number">03</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="varanasi">Varanasi</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-dwarka" href="https://www.google.com/maps/search/?api=1&query=Dwarkadhish+Temple+Dwarka" target="_blank" rel="noopener"><span class="dest-number">04</span><span class="dest-label"><small>GUJARAT</small><strong data-i18n="dwarka">Dwarka</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-kanpur" href="https://www.google.com/maps/search/?api=1&query=Kanpur+Uttar+Pradesh" target="_blank" rel="noopener"><span class="dest-number">05</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="kanpur">Kanpur</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-etawah" href="https://www.google.com/maps/search/?api=1&query=Etawah+Uttar+Pradesh" target="_blank" rel="noopener"><span class="dest-number">06</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="etawah">Etawah</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-ayodhya" href="https://www.google.com/maps/search/?api=1&query=Ram+Mandir+Ayodhya" target="_blank" rel="noopener"><span class="dest-number">07</span><span class="dest-label"><small>UTTAR PRADESH</small><strong data-i18n="ayodhya">Ayodhya</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+          <a class="destination-card dest-haridwar" href="https://www.google.com/maps/search/?api=1&query=Har+Ki+Pauri+Haridwar" target="_blank" rel="noopener"><span class="dest-number">08</span><span class="dest-label"><small>UTTARAKHAND</small><strong data-i18n="haridwar">Haridwar & Rishikesh</strong><em data-i18n="exploreMap">Explore on map ↗</em></span></a>
+        </div>
+        <div class="destination-cta"><p data-i18n="destinationCta">Have another destination in mind?</p><a href="#booking" class="btn btn-gold" data-i18n="askTrip">Ask about your trip ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
+        <div class="about-art">
+          <div class="about-photo"></div>
+          <div class="about-stamp"><strong>AT</strong><span>YOUR JOURNEY<br>OUR RESPONSIBILITY</span></div>
+        </div>
+        <div class="about-copy"><p class="eyebrow dark"><span></span><span data-i18n="aboutEyebrow">THE AMIR TRAVELERS PROMISE</span></p><h2 data-i18n="aboutTitle">Good journeys begin with <em>good care.</em></h2><p data-i18n="aboutDesc">Amir Travelers helps you plan city rides, family outings and spiritual trips with a focus on comfort, clear communication and dependable service. Share your route and preferences, and we'll discuss the details with you.</p><div class="promise-list"><span>✓ <span data-i18n="promise1">Clear fare estimates</span></span><span>✓ <span data-i18n="promise2">Trip details confirmed directly</span></span><span>✓ <span data-i18n="promise3">Routes tailored to your plans</span></span></div><a class="text-button" href="#booking" data-i18n="planWithUs">Plan with us ↗</a></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <div><p class="eyebrow"><span></span><span data-i18n="contactEyebrow">LET'S TALK TRAVEL</span></p><h2 data-i18n="contactTitle">Your next trip starts <em>with a hello.</em></h2><p data-i18n="contactDesc">Call us or send your trip details on WhatsApp.</p></div>
+        <div class="contact-actions"><a class="contact-link" href="tel:7451952707"><span>☎</span><small data-i18n="primaryPhone">Primary contact</small><strong>7451952707</strong></a><a class="contact-link" href="tel:8007985771"><span>☎</span><small data-i18n="secondaryPhone">Secondary contact</small><strong>8007985771</strong></a><a class="contact-link" href="https://wa.me/917451952707" target="_blank" rel="noopener"><span>↗</span><small>WhatsApp</small><strong data-i18n="chatNow">Chat now</strong></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M32 5 54 17v20L32 59 10 37V17Z"/><path d="M17 38h30l-4-12a4 4 0 0 0-4-3H25a4 4 0 0 0-4 3Z"/><path d="M21 38v6m22-6v6M25 31h14"/></svg></span><span class="brand-copy"><strong class="brand-title">AMIR <em>TRAVELERS</em></strong><small data-i18n="tagline">आपका सफर, हमारी ज़िम्मेदारी</small></span></a><p data-i18n="footerDesc">Thoughtful travel for the roads and moments that matter.</p></div>
+      <div class="footer-column"><h4 data-i18n="quickLinks">Quick links</h4><a href="#booking" data-i18n="bookTrip">Plan your trip</a><a href="#vehicles" data-i18n="navVehicles">Vehicles</a><a href="#destinations" data-i18n="navDestinations">Destinations</a><a href="#about" data-i18n="aboutUs">About us</a></div>
+      <div class="footer-column"><h4 data-i18n="socialConnect">Social & contact</h4><a href="https://www.instagram.com/amir_7451/" target="_blank" rel="noopener">Instagram · @amir_7451</a><a href="https://wa.me/917451952707" target="_blank" rel="noopener">WhatsApp · 7451952707</a><a href="mailto:amirtraveller">Email · @amirtraveller</a><a href="tel:8007985771">Secondary · 8007985771</a></div>
+    </div>
+    <div class="container terms-line"><span data-i18n="footerTerms">Toll and parking extra. Rates may change. Driver charge: Eeco ₹800 per car; other listed cars ₹1,000 per car. Confirm final fare before booking.</span></div>
+    <div class="creator-wrap"><div class="container creator-card"><div><small data-i18n="createdBy">WEBSITE DESIGNED & DEVELOPED BY</small><h3>Karan Kamal</h3><p data-i18n="creatorDesc">Need a website for your business? Let's build it.</p></div><div class="creator-links"><a href="tel:9870932288">Call / WhatsApp · 9870932288</a><a href="https://t.me/9870931288" target="_blank" rel="noopener">Telegram · 9870931288</a><a href="https://www.instagram.com/itskarankamal/" target="_blank" rel="noopener">Instagram · @itskarankamal</a><a href="mailto:kamalkaran939@gmail.com">kamalkaran939@gmail.com</a></div></div></div>
+    <div class="container copyright"><span>© <span id="year"></span> Amir Travelers. <span data-i18n="rights">All rights reserved.</span></span><a href="#home" data-i18n="backTop">Back to top ↑</a></div>
+  </footer>
+
+  <div class="floating-actions" aria-label="Quick contact"><a href="tel:7451952707" class="float-call" aria-label="Call Amir Travelers">☎</a><a href="https://wa.me/917451952707" target="_blank" rel="noopener" class="float-whatsapp" aria-label="WhatsApp Amir Travelers"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.02 3C8.86 3 3.04 8.77 3.04 15.88c0 2.28.61 4.51 1.77 6.47L3 29l6.84-1.78a13.1 13.1 0 0 0 6.18 1.56h.01c7.16 0 12.98-5.77 12.98-12.88A12.82 12.82 0 0 0 16.02 3Zm0 23.6h-.01a10.9 10.9 0 0 1-5.55-1.51l-.4-.24-4.06 1.06 1.08-3.93-.26-.41a10.63 10.63 0 0 1-1.65-5.69c0-5.94 4.87-10.77 10.86-10.77 2.9 0 5.63 1.12 7.68 3.16a10.65 10.65 0 0 1 3.18 7.61c0 5.94-4.87 10.77-10.87 10.77Zm5.96-8.06c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.74.16-.22.32-.85 1.06-1.04 1.28-.19.21-.38.24-.71.08-.33-.16-1.39-.51-2.65-1.62-.98-.86-1.64-1.92-1.83-2.25-.19-.32-.02-.5.14-.66.15-.14.33-.37.49-.55.16-.19.22-.32.33-.54.11-.21.06-.4-.03-.56-.08-.16-.74-1.77-1.01-2.42-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.4-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.35c.16.21 2.3 3.49 5.57 4.89.78.33 1.39.53 1.87.68.79.25 1.51.22 2.08.13.63-.09 1.93-.78 2.2-1.54.27-.75.27-1.39.19-1.53-.08-.13-.3-.21-.63-.37Z"/></svg></a></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
